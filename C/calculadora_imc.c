@@ -1,31 +1,34 @@
 #include <stdio.h>
 
-void menu(){
+void menu(){ // Função para apresentar o menu
+    printf("------------------\n");
     printf("Calculadora de IMC\n");
     printf("------------------\n");
-    printf("1. Calcular IMC\n");
+    printf("\n1. Calcular IMC\n");
     printf("2. Ver médias de IMC\n");
     printf("3. Sair\n");
 }
 
-void limpar_tela(){
-    #ifdef _WIN32
+void limpar_tela(){ // Função para limpar a tela
+    #ifdef _WIN32 // Verifica se o sistema operacional é Windows
         system("cls");
-    #else
+    #else // Se não for Windows
         system("clear");
     #endif
 }
 
-void pausar(){
+void pausar(){ // Função para pausar o programa antes de continuar
     printf("\nPressione Enter para continuar...");
+    // Enquanto o Enter não for pressionado
     while(getchar() != '\n');
+    // Limpa o buffer
     getchar();
 }
 
 int main() {
     float peso, altura, imc, media_imc = 0;
     int opc = 0;
-    int contador = 0;
+    int contador = 0; // Contador para contar quantos IMC foram calculados
 
     while(opc != 3) {
         limpar_tela();
@@ -59,8 +62,8 @@ int main() {
                 printf("Classificação: Obesidade\n");
             }
 
-            contador++;
-            media_imc += imc;
+            contador++; // Incrementa o contador
+            media_imc += imc; // Soma o IMC ao total
 
             pausar();
 
