@@ -1,6 +1,6 @@
 :root {
 
-    /* Cores */
+  /* Cores */
   --color-primary: #5e3bee;
   --color-primary-dark: #4526a9;
   --color-secondary: #ffb400;
@@ -151,6 +151,11 @@ footer {
 @media (max-width: 992px) {
   .hamburger {
     display: flex;
+
+    .section-flex{
+        flex-direction: column;
+        text-align: center;
+    }
   }
 
   .navbar-menu {
@@ -181,4 +186,67 @@ footer p {
       font-style: italic;
       font-size: var(--fs-md    );
       padding-top: 40px;
+}
+
+.section-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-4);
+  background-color: var(--color-bg);
+  border-radius: 12px;
+}
+
+.text-content {
+  flex: 1 1 60%;
+}
+
+.text-content h1 {
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-2);
+}
+
+.text-content p {
+  line-height: 1.6;
+  color: var(--color-neutral-900);
+}
+
+.image-content {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.valores-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  font-size: 25px;
+  font-weight: bold;
+  justify-content: center;
+  color: var(--color-neutral-900);
+}
+
+.valores-list li:hover{
+  color: var(--color-secondary);
+}
+
+.title {
+    text-align: center;
+}
+
+.contato{
+  list-style: none;
+  justify-content: center;
+  color: var(--color-neutral-900);
+  text-align: center;
 }
