@@ -69,8 +69,11 @@ hr{
 
 img {
   border-radius: 8px;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 400px !important;
+  object-fit: cover;
+  display: block;
+  object-position: top;
 }
 
 footer {
@@ -151,12 +154,8 @@ footer {
 @media (max-width: 992px) {
   .hamburger {
     display: flex;
-
-    .section-flex{
-        flex-direction: column;
-        text-align: center;
-    }
   }
+
 
   .navbar-menu {
     display: none;
@@ -171,6 +170,11 @@ footer {
 
   .menu-toggle:checked + .hamburger + .navbar-menu {
     display: flex;
+  }
+
+  .section-flex{
+        flex-direction: column;
+        text-align: center;
   }
 }
 
@@ -249,4 +253,106 @@ footer p {
   justify-content: center;
   color: var(--color-neutral-900);
   text-align: center;
+}
+
+.projetos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card-projeto {
+  background-color: #fff;
+  border: 1px solid var(--color-neutral-300);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.card-projeto:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-projeto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-text {
+  padding: 1.5rem;
+  flex-grow: 1;
+}
+
+.card-text h1 {
+  color: var(--color-primary);
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text p {
+  margin-bottom: 0.8rem;
+  color: var(--color-neutral-800);
+}
+
+.card-text a {
+  text-align: center;
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: #fff;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  transition: background-color 0.3s ease;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.card-text a:hover {
+  background-color: var(--color-secondary);
+} 
+
+#doacao{
+  text-align: center;
+}
+
+#doacao ul{
+  list-style: none;
+  justify-content: center;
+  color: var(--color-neutral-900);
+}
+
+#doacao button {
+  margin-top: 10px;
+  background-color: var(--color-primary);
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#doacao button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+ #doacao button:hover{
+  background-color: var(--color-secondary);
+  padding: 25px;
+  transition: ease-in-out 0.3s;
+ }
+
+ #doacao button a{
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
 }
