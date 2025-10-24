@@ -4,21 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/world-svgrepo-com.svg">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Equipe</title>
 </head>
 <body>
 
-    <header>
-        <nav class="navbar">
-            <ul class="menu">
-                <li><a href="../index.html">Página Inicial</a></li>
-                <li><a href="projetos.html">Projetos Sociais</a></li>
-                <li><a href="doacao.html">Apoie a causa!</a></li>
-                <li><a href="cadastro.html">Venha fazer parte da equipe!</a></li>
-            </ul>
-        </nav>
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">ConectaMundo</a>
 
-        <h1 class="title">ConectaMundo</h1>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+                <label for="menu-toggle" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+            <ul class="navbar-menu">
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="doacao.html">Doação</a></li>
+            </ul>
+        </div>
     </header>
 
     <main>
@@ -115,12 +123,10 @@
     </main>
 
     <footer>
-        <br><hr>
-        <p>&copy; 2025 ConectaMundo. Todos os direitos reservados.</p>
-        <p>
-            <b>Todas as informações utilizadas no site são fictícias.</b>
+        <p>&copy; 2025 ConectaMundo. Todos os direitos reservados.
+            <br>Todas as informações utilizadas no site são fictícias.
         </p>
-    </footer>
+    </footer>       
     
 </body>
 </html>

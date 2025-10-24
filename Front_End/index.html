@@ -4,29 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/world-svgrepo-com.svg">
+    <link rel="stylesheet" href="css/style.css">
     <title>Página Inicial</title>
 </head>
 <body>
 
-    <header>
-        <!-- Navbar -->
-        <nav class="navbar">
-            <ul class="menu">
-                <li><a href="pages/projetos.html">Projetos Sociais</a></li>
-                <li><a href="pages/equipe.html">Conheça nossa equipe</a></li>
-                <li><a href="pages/doacao.html">Apoie a causa!</a></li>
-                <li><a href="pages/cadastro.html">Venha fazer parte da equipe!</a></li>
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">ConectaMundo</a>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+                <label for="menu-toggle" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+            <ul class="navbar-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="pages/projetos.html">Projetos</a></li>
+                <li><a href="pages/doacao.html">Doação</a></li>
+                <li><a href="pages/equipe.html">Equipe</a></li>
             </ul>
-        </nav>
-
-        <!-- Banner -->
-         <img src="" alt="">
-
-        <!-- Titulo -->
-          <h1 class="title">ConectaMundo</h1>
+        </div>
     </header>
 
-    <main>
+    <main class="container">
         <section id="comeco">
             <h1>Como começou</h1>
             <article>
@@ -101,12 +105,10 @@
     </main>
 
     <footer>
-        <br><hr>
-        <p>&copy; 2025 ConectaMundo. Todos os direitos reservados.</p>
-        <p>
-            <b>Todas as informações utilizadas no site são fictícias.</b>
+        <p>&copy; 2025 ConectaMundo. Todos os direitos reservados.
+            <br>Todas as informações utilizadas no site são fictícias.
         </p>
-    </footer>
+    </footer>       
     
 </body>
 </html>
