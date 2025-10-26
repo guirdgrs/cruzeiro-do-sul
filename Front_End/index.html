@@ -1,110 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/world-svgrepo-com.svg">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Página Inicial</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>ConectaMundo</title>
 </head>
 <body>
 
-    <header class="navbar">
-        <div class="container">
-            <a href="index.html" class="navbar-brand">ConectaMundo</a>
+  <header class="navbar">
+    <div class="container">
+      <a href="#/" class="navbar-brand">ConectaMundo</a>
 
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
 
-                <label for="menu-toggle" class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
+      <ul class="navbar-menu">
+        <li><a href="#/">Início</a></li>
+        <li><a href="#/projetos">Projetos</a></li>
+        <li><a href="#/equipe">Equipe</a></li>
+        <li><a href="#/doacao">Doação</a></li>
+        <li><a href="#/cadastro">Cadastro</a></li>
+      </ul>
+    </div>
+  </header>
 
-            <ul class="navbar-menu">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="pages/projetos.html">Projetos</a></li>
-                <li><a href="pages/doacao.html">Doação</a></li>
-                <li><a href="pages/equipe.html">Equipe</a></li>
-            </ul>
-        </div>
-    </header>
+  <main id="app"></main>
 
-    <main class="container">
-        <section id="comeco" class="section-flex">
-            <div class="text-content">
+  <footer>
+    <p>&copy; 2025 ConectaMundo. Todos os direitos reservados.<br>Todas as informações utilizadas no site são fictícias.</p>
+  </footer>
 
-            <h1>Como começou</h1>
-            <p>
-                A ConectaMundo nasceu em 2021, quando um grupo de jovens universitários percebeu o quanto a falta de acesso à internet e ao conhecimento digital dificultava o desenvolvimento pessoal e profissional de muitas pessoas em suas comunidades.
-            <br><br>
-                Durante a pandemia, um dos fundadores, Lucas Andrade, estudante de Engenharia da Computação, se voluntariou para ajudar alunos de escolas públicas a acompanhar aulas online. Ele percebeu que muitos não tinham noção básica de como usar um computador, acessar e-mails ou preencher formulários digitais.
-            <br><br>
-                Inspirado por isso, ele e alguns amigos criaram um projeto de oficinas gratuitas de tecnologia básica. O sucesso foi tão grande que, em poucos meses, o grupo se transformou oficialmente em uma ONG, a ConectaMundo, com o objetivo de promover a inclusão digital em todo o Brasil. 
-            </p>
-
-            
-            </div>
-                <div class="image-content">
-                    <img src="img/creators.jpg" alt="Pessoas utilizando o computador" loading="lazy">
-                </div>
-        </section>  
-
-        <hr>
-
-        <section id="missao" class="section-flex">
-            <div class="text-content">
-                <h1>Missão</h1>
-                <p>
-                    Promover a inclusão digital e o acesso equitativo à tecnologia, capacitando pessoas em situação de vulnerabilidade social para o mundo digital e para o mercado de trabalho do futuro.
-                </p>
-            </div>
-        </section>
-
-        <hr>
-
-        <section id="valores" class="section-flex">
-
-            <div class="image-content">
-                <img src="img/pessoas-trabalhando-juntas-vista-lateral.jpg" alt="Pessoas trabalhando juntas" loading="lazy">
-            </div>
-
-            <div class="text-content">
-                <h1 class="title">Valores</h1>
-                <p>
-                    <ul class="valores-list">
-                        <li>Acessibilidade</li>
-                        <li>Educação</li>
-                        <li>Empatia</li>
-                        <li>Colaboração</li>
-                        <li>Sustentabilidade</li>
-                    </ul>
-                </p>
-            </div>
-        </section>
-
-        <hr>
-
-        <section id="contato" class="section-flex">
-
-            <div class="text-content">
-            <h3 class="title">Informações de Contato</h3>
-                <ul class="contato">
-                    <li><b>Instagram:</b> @conectamundo</li>
-                    <li><b>Telefone:</b> (11) 1234-5678</li>
-                    <li><b>Email:</b> contato@conectamundo.org.br</li>
-                    <li><b>Endereço:</b> Rua das Flores, 123, Centro, São Paulo</li>
-                </ul>
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>&copy; 2025 ConectaMundo. Todos os direitos reservados.
-            <br>Todas as informações utilizadas no site são fictícias.
-        </p>
-    </footer>       
-    
+  <script src="js/script.js"></script>
 </body>
 </html>
