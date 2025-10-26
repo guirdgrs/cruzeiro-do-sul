@@ -433,7 +433,6 @@ footer p {
   width: 300px;
 }
 
-
 #equipe button {
   margin-top: 10px;
   background-color: var(--color-primary);
@@ -475,4 +474,101 @@ main hr {
   #equipe h1 {
     font-size: 1.4rem;
   }
+}
+
+form {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 32px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+form h3 {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  margin-top: 16px;
+  border-bottom: 2px solid var(--primary-color);
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+form label {
+  font-weight: bold;
+  color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"] {
+  width: 100%;
+  padding: 10px 14px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+form input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 6px rgba(111, 66, 193, 0.3);
+}
+
+form input:valid {
+  border-color: #2ecc71;
+}
+
+form input:invalid:focus {
+  border-color: #e74c3c;
+}
+
+form input[type="submit"] {
+  margin-top: 10px;
+  background-color: var(--color-primary);
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: medium;
+}
+
+form input[type="submit"]:hover {
+  background-color: var(--color-secondary);
+  padding: 25px;
+  transition: ease-in-out 0.3s;
+}
+
+form p,
+form i {
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  form {
+    padding: 20px;
+  }
+
+  form input {
+    font-size: 0.95rem;
+  }
+}
+
+#handshake{
+  border-radius: 8px;
+  width: 100%;
+  height: 450px !important;
+  object-fit: cover;
+  display: block;
+  object-position: center;
 }
