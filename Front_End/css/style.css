@@ -542,3 +542,36 @@ footer p {
   form { padding: 20px; }
   form input { font-size: 0.95rem; }
 }
+
+/* =========================================================
+    ACESSIBILIDADE
+========================================================= */
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  background: var(--color-primary);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  z-index: 9999;
+}
+
+:focus {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 2px;
+  box-shadow: none;
+}
+a, button, input, select, textarea {
+  -webkit-tap-highlight-color: transparent;
+}
