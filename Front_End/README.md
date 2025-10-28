@@ -24,7 +24,6 @@ Este projeto foi desenvolvido com foco em:
 - Garantir **contraste mínimo de 4.5:1** para textos e botões;
 - Desenvolver **modo escuro** e **modo de alto contraste** com alternância dinâmica;
 - Aplicar **GitFlow**, commits semânticos e versionamento semântico;
-- Otimizar o projeto para produção com **minificação de HTML, CSS e JS**, e **compressão de imagens**.
 
 ---
 
@@ -32,8 +31,8 @@ Este projeto foi desenvolvido com foco em:
 
 | Tecnologia | Função |
 |-------------|--------|
-| **HTML5** | Estrutura semântica das páginas |
-| **CSS3** | Estilização e responsividade |
+| **HTML** | Estrutura semântica das páginas |
+| **CSS** | Estilização e responsividade |
 | **JavaScript** | Interatividade (modos escuro e contraste) |
 | **Git / GitHub** | Controle de versão e versionamento semântico |
 | **Acessibilidade (WCAG 2.1 Nível AA)** | Verificação de acessibilidade e performance |
