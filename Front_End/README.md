@@ -87,3 +87,28 @@ O site segue as diretrizes da **WCAG 2.1 (Nível AA)**:
 | Página Inicial | ![screenshot-home](./img/PaginaInicial.png) |
 | Projetos | ![screenshot-projetos](./img/Projetos.png) |
 | Cadastro | ![screenshot-cadastro](./img/Cadastro.png) |
+
+## 🔀 Estratégia de Versionamento
+
+Este projeto segue a estratégia de versionamento **GitFlow**, com as seguintes branches:
+
+- `main` → versão estável
+- `develop` → desenvolvimento ativo
+- `feature/*` → novas funcionalidades
+- `hotfix/*` → correções rápidas
+- `release/*` → preparação de novas versões
+
+---
+
+## 🪪 Licença
+
+Este projeto é de **uso educacional**, sem fins comerciais.
+
+---
+
+## 👨‍💻 Autor
+
+**Guilherme Rodrigues**  
+📧 Email: [josrodriguesguilherme@gmail.com](mailto:josrodriguesguilherme@gmail.com)  
+💼 GitHub: [guirdgrs](https://github.com/guirdgrs)  
+🔗 LinkedIn: [Guilherme J. Rodrigues](https://www.linkedin.com/in/guilherme-jrodrigues/)
