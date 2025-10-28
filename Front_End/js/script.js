@@ -14,8 +14,16 @@ async function loadRoute() {
   try {
     const response = await fetch(route);
     const html = await response.text();
+
     document.getElementById('app').innerHTML = html;
+    // Scrollando para o topo
     window.scrollTo({ top: 0, behavior: "smooth" });
+
+    // Focando o primeiro elemento
+    const main = document.getElementById('main-content') || document.getElementById('app');
+    main.setAttribute('tabindex', '-1');
+    main.focus();
+    
   } catch (error) {
     document.getElementById('app').innerHTML = `<h2>Página não encontrada</h2>`;
   }
