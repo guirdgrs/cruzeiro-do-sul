@@ -23,8 +23,6 @@ O projeto inclui:
 ---
 
 
----
-
 ## 🧩 DER – Diagrama Entidade Relacionamento
 
 📎 DER:  
